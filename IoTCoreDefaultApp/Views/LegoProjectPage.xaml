@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="IoTCoreDefaultApp.Views.LegoProjectPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IoTCoreDefaultApp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Background="#2a2a2a">
+            <Button x:Name="BackButton" Content="{StaticResource IconBack}" Background="Transparent" BorderThickness="0" BorderBrush="Transparent"  FontFamily="{StaticResource IconFontFamily}" FontSize="24" Click="BackButton_Click" Margin="10,5,20,0" Height="48" Width="48" VerticalAlignment="Center"/>
+            <TextBlock Text="Back To Home" Style="{ThemeResource TitleTextBlockStyle}" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Grid Margin="0,55,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="PMMMonitor" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" FontSize="40" Click="PMMMonitor_Click" Background="Silver">PM 2.5 Monitor</Button>
+            <Button x:Name="MonitorHome" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" FontSize="40" Click="MonitorHome_Click" Background="SkyBlue" Grid.Column="1">Monitor Home</Button>
+            <Button x:Name="Voltmeter" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" FontSize="40" Click="Voltmeter_Click" Background="Orchid" Grid.Column="0" Grid.Row="1">Voltmeter</Button>
+            <Button x:Name="Temperature" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" FontSize="40" Click="Temperature_Click" Background="YellowGreen" Grid.Column="1" Grid.Row="1">Temperature</Button>
+            <Button x:Name="Switcher" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" FontSize="40" Click="Switcher_Click" Background="BurlyWood" Grid.Column="0" Grid.Row="2">Switcher</Button>
+            <Button x:Name="lightsensation" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" FontSize="40" Click="lightsensation_Click" Background="DarkOliveGreen" Grid.Column="1" Grid.Row="2">Light Sensation</Button>
+
+        </Grid>
+    </Grid>
+</Page>
